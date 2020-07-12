@@ -24,6 +24,7 @@ package com.github.dirtpowered.betatorelease.data.magicvalues;
 
 import com.github.dirtpowered.betatorelease.data.magicvalues.model.DataHolder;
 import com.github.steveice10.mc.protocol.data.game.entity.player.GameMode;
+import com.github.steveice10.mc.protocol.data.game.entity.type.EntityType;
 import com.github.steveice10.mc.protocol.data.game.setting.Difficulty;
 import com.github.steveice10.mc.protocol.data.game.world.notify.ClientNotification;
 
@@ -32,11 +33,13 @@ public class MagicValues {
     private static DifficultyMap difficultyMap;
     private static GamemodeMap gamemodeMap;
     private static ClientNotificationMap clientNotificationMap;
+    private static EntityTypeMap entityTypeMap;
 
     static {
         difficultyMap = new DifficultyMap();
         gamemodeMap = new GamemodeMap();
         clientNotificationMap = new ClientNotificationMap();
+        entityTypeMap = new EntityTypeMap();
     }
 
     public static int getDifficultyId(Difficulty difficulty) {
@@ -49,6 +52,10 @@ public class MagicValues {
 
     public static int getClientNotificationId(ClientNotification clientNotification) {
         return clientNotificationMap.getFromNamespace(clientNotification);
+    }
+
+    public static int getEntityTypeId(EntityType entityType) {
+        return entityTypeMap.getFromNamespace(entityType);
     }
 
     static class DifficultyMap extends DataHolder<Difficulty> {
@@ -79,6 +86,34 @@ public class MagicValues {
             add(ClientNotification.STOP_RAIN, 2);
             add(ClientNotification.CHANGE_GAMEMODE, 3);
             add(ClientNotification.ENTER_CREDITS, 4);
+        }
+    }
+
+    static class EntityTypeMap extends DataHolder<EntityType> {
+
+        //TODO: entity replacements
+        EntityTypeMap() {
+            add(EntityType.PIG, 90);
+            add(EntityType.SHEEP, 91);
+            add(EntityType.COW, 92);
+            add(EntityType.CHICKEN, 93);
+            add(EntityType.SQUID, 94);
+            add(EntityType.WOLF, 95);
+            add(EntityType.SNOW_GOLEM, 97);
+            add(EntityType.CREEPER, 50);
+            add(EntityType.SKELETON, 51);
+            add(EntityType.SPIDER, 52);
+            add(EntityType.GIANT, 53);
+            add(EntityType.ZOMBIE, 54);
+            add(EntityType.SLIME, 55);
+            add(EntityType.GHAST, 56);
+            add(EntityType.ZOMBIE_PIGMAN, 57);
+            add(EntityType.ENDERMAN, 58);
+            add(EntityType.CAVE_SPIDER, 59);
+            add(EntityType.SILVERFISH, 60);
+            add(EntityType.BLAZE, 61);
+            add(EntityType.MAGMA_CUBE, 62);
+            add(EntityType.ENDER_DRAGON, 63);
         }
     }
 }
