@@ -8,6 +8,7 @@ Proxy that allows connecting to modern servers (1.15.2) from beta1.9 (r1.0) clie
 - [x] Server pinging from 1.9pre6 (r1.0)
 - [x] Connecting to 1.15.2 servers
 - [x] Player movement
+- [x] Animals, Entity movement
 - [x] Chat
 - [x] Chunks
 - [x] Day-night time cycle / weather
@@ -21,4 +22,4 @@ Proxy that allows connecting to modern servers (1.15.2) from beta1.9 (r1.0) clie
 - [x] Almost everything
 
 ### Screenshots
-![ss](https://i.imgur.com/DRBEkiy.png)
+![ss](https://i.imgur.com/H3ejz5K.png)
