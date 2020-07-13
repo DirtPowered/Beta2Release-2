@@ -42,6 +42,7 @@ public class BetaPlayer extends Entity {
     private int difficulty;
     private long hashedSeed;
     private boolean onGround;
+    private int protocolVersion;
 
     private Map<UUID, String> tabEntries;
 

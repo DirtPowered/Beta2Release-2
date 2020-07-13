@@ -26,6 +26,7 @@ import com.github.dirtpowered.betaprotocollib.data.version.MinecraftVersion;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_8.data.LoginPacketData;
 import com.github.dirtpowered.betatorelease.BetaToRelease;
 import com.github.dirtpowered.betatorelease.data.ProtocolState;
+import com.github.dirtpowered.betatorelease.data.player.BetaPlayer;
 import com.github.dirtpowered.betatorelease.network.client.ModernClient;
 import com.github.dirtpowered.betatorelease.network.session.ServerSession;
 import com.github.dirtpowered.betatorelease.network.translator.model.BetaToModern;
@@ -35,10 +36,13 @@ public class LoginTranslator implements BetaToModern<LoginPacketData> {
     @Override
     public void translate(BetaToRelease main, LoginPacketData packet, ServerSession session, ModernClient modernClient) {
         ProtocolState protocolState = session.getProtocolState();
+        BetaPlayer player = session.getBetaPlayer();
 
         if (protocolState == ProtocolState.LOGIN) {
             session.setProtocolState(ProtocolState.PLAY);
-            session.getBetaPlayer().setUsername(packet.getPlayerName());
+            player.setUsername(packet.getPlayerName());
+            player.setProtocolVersion(packet.getEntityId());
+
             if (packet.getEntityId() /*it's protocol version */ != MinecraftVersion.B_1_9.getProtocolVersion()) {
                 session.disconnect("unsupported protocol " + packet.getEntityId());
                 return;

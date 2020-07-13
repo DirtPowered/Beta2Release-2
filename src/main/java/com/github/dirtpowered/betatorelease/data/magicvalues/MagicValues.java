@@ -91,7 +91,6 @@ public class MagicValues {
 
     static class EntityTypeMap extends DataHolder<EntityType> {
 
-        //TODO: entity replacements
         EntityTypeMap() {
             add(EntityType.PIG, 90);
             add(EntityType.SHEEP, 91);
@@ -99,6 +98,7 @@ public class MagicValues {
             add(EntityType.CHICKEN, 93);
             add(EntityType.SQUID, 94);
             add(EntityType.WOLF, 95);
+            add(EntityType.MOOSHROOM, 96);
             add(EntityType.SNOW_GOLEM, 97);
             add(EntityType.CREEPER, 50);
             add(EntityType.SKELETON, 51);
@@ -114,6 +114,15 @@ public class MagicValues {
             add(EntityType.BLAZE, 61);
             add(EntityType.MAGMA_CUBE, 62);
             add(EntityType.ENDER_DRAGON, 63);
+
+            //entity replacements
+            add(EntityType.DROWNED, 54);
+            add(EntityType.STRAY, 54);
+            add(EntityType.GUARDIAN, 94);
+            add(EntityType.ENDERMITE, 60);
+            add(EntityType.PILLAGER, 51);
+
+            //TODO: add more
         }
     }
 }

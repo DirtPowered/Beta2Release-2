@@ -27,11 +27,12 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.apache.commons.io.IOUtils;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -39,9 +40,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PreFlatteningData {
+    private final static OldBlock DEFAULT = new OldBlock(1, 0);
     private static BetaToRelease main;
     private static Map<Integer, OldBlock> newToOldMap = new HashMap<>();
-    private final static OldBlock DEFAULT = new OldBlock(1, 0);
 
     public static void setInstance(BetaToRelease betaToRelease) {
         main = betaToRelease;
@@ -55,8 +56,14 @@ public class PreFlatteningData {
 
             Path p = Paths.get("src/main/resources/blocks.json");
             if (!Files.exists(p)) {
+                File mappingTempFile = File.createTempFile("blocks", ".json");
+                mappingTempFile.deleteOnExit();
 
-                f = new File(PreFlatteningData.class.getResource("/blocks.json").toURI());
+                try (FileOutputStream out = new FileOutputStream(mappingTempFile)) {
+                    IOUtils.copy(PreFlatteningData.class.getResourceAsStream("/blocks.json"), out);
+                }
+
+                f = mappingTempFile;
             } else {
                 f = p.toFile();
             }
@@ -84,7 +91,7 @@ public class PreFlatteningData {
             }
 
             main.getLogger().info("loaded " + count + " blocks");
-        } catch (IOException | URISyntaxException e) {
+        } catch (IOException e) {
             main.getLogger().error("unable to parse blocks.json");
         }
     }

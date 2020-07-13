@@ -25,6 +25,7 @@ package com.github.dirtpowered.betatorelease.network.protocol;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.AnimationPacketData;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.BlockItemSwitchPacketData;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.ChatPacketData;
+import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.EntityActionPacketData;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.FlyingPacketData;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.HandshakePacketData;
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.PlayerLookMovePacketData;
@@ -36,6 +37,7 @@ import com.github.dirtpowered.betaprotocollib.packet.Version_B1_8.data.ServerLis
 import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.AnimationTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.BlockItemSwitchTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.ChatTranslator;
+import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.EntityActionTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.FlyingTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.HandshakeTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.betatomodern.B_1_9.LoginTranslator;
@@ -59,6 +61,7 @@ import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerPlayerPositionRotationTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerPlayerSetExperienceTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerRespawnTranslator;
+import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerSpawnLivingEntityTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerSpawnPositionTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerUnloadChunkTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B_1_9.ServerUpdateTimeTranslator;
@@ -76,6 +79,7 @@ import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntit
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.player.ServerPlayerHealthPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.player.ServerPlayerPositionRotationPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.player.ServerPlayerSetExperiencePacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnLivingEntityPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerBlockChangePacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerChunkDataPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerNotifyClientPacket;
@@ -97,6 +101,7 @@ public class B_1_9 {
         betaToModernTranslatorRegistry.registerTranslator(FlyingPacketData.class, new FlyingTranslator());
         betaToModernTranslatorRegistry.registerTranslator(AnimationPacketData.class, new AnimationTranslator());
         betaToModernTranslatorRegistry.registerTranslator(PlayerLookPacketData.class, new PlayerLookTranslator());
+        betaToModernTranslatorRegistry.registerTranslator(EntityActionPacketData.class, new EntityActionTranslator());
 
         modernToBetaTranslatorRegistry.registerTranslator(ServerJoinGamePacket.class, new ServerJoinGameTranslator());
         modernToBetaTranslatorRegistry.registerTranslator(ServerSpawnPositionPacket.class, new ServerSpawnPositionTranslator());
@@ -116,5 +121,6 @@ public class B_1_9 {
         modernToBetaTranslatorRegistry.registerTranslator(ServerDifficultyPacket.class, new ServerDifficultyTranslator());
         modernToBetaTranslatorRegistry.registerTranslator(ServerNotifyClientPacket.class, new ServerNotifyClientTranslator());
         modernToBetaTranslatorRegistry.registerTranslator(ServerBlockChangePacket.class, new ServerBlockChangeTranslator());
+        modernToBetaTranslatorRegistry.registerTranslator(ServerSpawnLivingEntityPacket.class, new ServerSpawnLivingEntityTranslator());
     }
 }
