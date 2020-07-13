@@ -777,6 +777,10 @@
         "legacy_id": 40,
         "legacy_data": 0
       },
+      "1431": {
+        "legacy_id": 47,
+        "legacy_data": 4
+      },
       "1432": {
         "legacy_id": 48,
         "legacy_data": 4
@@ -875,6 +879,18 @@
       },
       "3884": {
         "legacy_id": 73,
+        "legacy_data": 0
+      },
+      "3927": {
+        "legacy_id": 79,
+        "legacy_data": 0
+      },
+      "3928": {
+        "legacy_id": 80,
+        "legacy_data": 0
+      },
+      "3945": {
+        "legacy_id": 82,
         "legacy_data": 0
       },
       "3964": {
@@ -2809,6 +2825,10 @@
         "legacy_id": 102,
         "legacy_data": 0
       },
+      "7348": {
+        "legacy_id": 79,
+        "legacy_data": 0
+      },
       "7357": {
         "legacy_id": 31,
         "legacy_data": 1
@@ -2820,6 +2840,138 @@
       "8687": {
         "legacy_id": 13,
         "legacy_data": 0
+      },
+      "8717": {
+        "legacy_id": 89,
+        "legacy_data": 0
+      },
+      "8902": {
+        "legacy_id": 35,
+        "legacy_data": 0
+      },
+      "8903": {
+        "legacy_id": 35,
+        "legacy_data": 1
+      },
+      "8904": {
+        "legacy_id": 35,
+        "legacy_data": 2
+      },
+      "8905": {
+        "legacy_id": 35,
+        "legacy_data": 3
+      },
+      "8906": {
+        "legacy_id": 35,
+        "legacy_data": 4
+      },
+      "8907": {
+        "legacy_id": 35,
+        "legacy_data": 5
+      },
+      "8908": {
+        "legacy_id": 35,
+        "legacy_data": 6
+      },
+      "8909": {
+        "legacy_id": 35,
+        "legacy_data": 7
+      },
+      "8910": {
+        "legacy_id": 35,
+        "legacy_data": 8
+      },
+      "8911": {
+        "legacy_id": 35,
+        "legacy_data": 9
+      },
+      "8912": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8913": {
+        "legacy_id": 35,
+        "legacy_data": 11
+      },
+      "8914": {
+        "legacy_id": 35,
+        "legacy_data": 12
+      },
+      "8915": {
+        "legacy_id": 35,
+        "legacy_data": 13
+      },
+      "8916": {
+        "legacy_id": 35,
+        "legacy_data": 14
+      },
+      "8917": {
+        "legacy_id": 35,
+        "legacy_data": 15
+      },
+      "8918": {
+        "legacy_id": 35,
+        "legacy_data": 0
+      },
+      "8919": {
+        "legacy_id": 35,
+        "legacy_data": 1
+      },
+      "8920": {
+        "legacy_id": 35,
+        "legacy_data": 2
+      },
+      "8921": {
+        "legacy_id": 35,
+        "legacy_data": 3
+      },
+      "8922": {
+        "legacy_id": 35,
+        "legacy_data": 4
+      },
+      "8923": {
+        "legacy_id": 35,
+        "legacy_data": 5
+      },
+      "8924": {
+        "legacy_id": 35,
+        "legacy_data": 6
+      },
+      "8925": {
+        "legacy_id": 35,
+        "legacy_data": 7
+      },
+      "8926": {
+        "legacy_id": 35,
+        "legacy_data": 8
+      },
+      "8927": {
+        "legacy_id": 35,
+        "legacy_data": 9
+      },
+      "8928": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8929": {
+        "legacy_id": 35,
+        "legacy_data": 11
+      },
+      "8930": {
+        "legacy_id": 35,
+        "legacy_data": 12
+      },
+      "8931": {
+        "legacy_id": 35,
+        "legacy_data": 13
+      },
+      "8932": {
+        "legacy_id": 35,
+        "legacy_data": 14
+      },
+      "8933": {
+        "legacy_id": 35,
+        "legacy_data": 15
       },
       "8934": {
         "legacy_id": 6,
