@@ -797,9 +797,21 @@
         "legacy_id": 24,
         "legacy_data": 2
       },
+      "1340": {
+        "legacy_id": 3,
+        "legacy_data": 0
+      },
       "1341": {
         "legacy_id": 31,
         "legacy_data": 1
+      },
+      "1342": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "1343": {
+        "legacy_id": 32,
+        "legacy_data": 0
       },
       "1344": {
         "legacy_id": 31,
@@ -889,6 +901,18 @@
         "legacy_id": 38,
         "legacy_data": 0
       },
+      "1414": {
+        "legacy_id": 38,
+        "legacy_data": 0
+      },
+      "1415": {
+        "legacy_id": 38,
+        "legacy_data": 0
+      },
+      "1416": {
+        "legacy_id": 38,
+        "legacy_data": 0
+      },
       "1417": {
         "legacy_id": 38,
         "legacy_data": 0
@@ -907,6 +931,14 @@
       },
       "1421": {
         "legacy_id": 38,
+        "legacy_data": 0
+      },
+      "1422": {
+        "legacy_id": 39,
+        "legacy_data": 0
+      },
+      "1423": {
+        "legacy_id": 37,
         "legacy_data": 0
       },
       "1424": {
@@ -1021,6 +1053,18 @@
         "legacy_id": 60,
         "legacy_data": 1
       },
+      "3736": {
+        "legacy_id": 323,
+        "legacy_data": 0 //TODO: Rotation
+      },
+      "3790": {
+        "legacy_id": 69,
+        "legacy_data": 0 //TODO: Rotation and Activation
+      },
+      "3806": {
+        "legacy_id": 70,
+        "legacy_data": 1
+      },
       "3883": {
         "legacy_id": 74,
         "legacy_data": 0
@@ -1035,6 +1079,70 @@
       },
       "3928": {
         "legacy_id": 80,
+        "legacy_data": 0
+      },
+      "3929": {
+        "legacy_id": 81,
+        "legacy_data": 0 //TODO: Ageing? I guess? I dont think its in beta (3929 - 3944)
+      },
+      "3930": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3931": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3932": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3933": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3934": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3935": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3936": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3937": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3938": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3939": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3940": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3941": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3942": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3943": {
+        "legacy_id": 81,
+        "legacy_data": 0
+      },
+      "3944": {
+        "legacy_id": 81,
         "legacy_data": 0
       },
       "3945": {
@@ -1169,6 +1277,14 @@
         "legacy_id": 85,
         "legacy_data": 0
       },
+      "3996": {
+        "legacy_id": 86,
+        "legacy_data": 0
+      },
+      "3997": {
+        "legacy_id": 87,
+        "legacy_data": 0
+      },
       "3999": {
         "legacy_id": 89,
         "legacy_data": 0
@@ -1180,6 +1296,42 @@
       "4001": {
         "legacy_id": 90,
         "legacy_data": 0
+      },
+      "4002": {
+        "legacy_id": 90,
+        "legacy_data": 0
+      },
+      "4003": {
+        "legacy_id": 90,
+        "legacy_data": 1
+      },
+      "4004": {
+        "legacy_id": 90,
+        "legacy_data": 2
+      },
+      "4005": {
+        "legacy_id": 90,
+        "legacy_data": 3
+      },
+      "4006": {
+        "legacy_id": 90,
+        "legacy_data": 0
+      },
+      "4007": {
+        "legacy_id": 90,
+        "legacy_data": 1
+      },
+      "4008": {
+        "legacy_id": 90,
+        "legacy_data": 2
+      },
+      "4009": {
+        "legacy_id": 90,
+        "legacy_data": 3
+      },
+      "4020": {
+        "legacy_id": 356,
+        "legacy_data": 0 //TODO: Rotation and Activation (4017 - 4080)
       },
       "4081": {
         "legacy_id": 20,
@@ -1245,13 +1397,113 @@
         "legacy_id": 20,
         "legacy_data": 0
       },
+      "4128": {
+        "legacy_id": 96,
+        "legacy_data": 0 //TODO: Activation, Rotation and Halfing (Probally not a beta 1.7.3 thing) (ALL TRAPDOOR TYPES: 4097 - 4480)
+      },
       "4481": {
         "legacy_id": 4,
         "legacy_data": 0
       },
+      "4485": {
+        "legacy_id": 1,
+        "legacy_data": 0
+      },
+      "4747": {
+        "legacy_id": 35,
+        "legacy_data": 5 //TODO: Find a better alternitave for melon (probally id 2 is good?)
+      },
+      "4835": {
+        "legacy_id": 64,
+        "legacy_data": 0 //TODO: Activation and Rotation (4804 - 4835)
+      },
+      "4836": {
+        "legacy_id": 67,
+        "legacy_data": 0 //TODO: Rotation (BRICK/STONE BRICK: 4836 - 4995)
+      },
       "4985": {
         "legacy_id": 67,
         "legacy_data": 0 //TODO: data
+      },
+      "4998": {
+        "legacy_id": 35,
+        "legacy_data": 13
+      },
+      "5112": {
+        "legacy_id": 40, 
+        "legacy_data": 0 //TODO: Map nether_wart with aging wheat, for now, red mushroom is a replacement (5112 - 5115)
+      },
+      "5113": {
+        "legacy_id": 40, 
+        "legacy_data": 0
+      },
+      "5114": {
+        "legacy_id": 40, 
+        "legacy_data": 0
+      },
+      "5115": {
+        "legacy_id": 40, 
+        "legacy_data": 0
+      },
+      "5132": {
+        "legacy_id": 35, 
+        "legacy_data": 5 //TODO: Porbaly find a better block for activated end portals
+      },
+      "5234": {
+        "legacy_id": 21, 
+        "legacy_data": 0 
+      },
+      "5244": {
+        "legacy_id": 76, 
+        "legacy_data": 0 //TODO: data
+      },
+      "5246": {
+        "legacy_id": 76, 
+        "legacy_data": 2 
+      },
+      "5312": {
+        "legacy_id": 55, 
+        "legacy_data": 0 //TODO: data 
+      },
+      "5794": {
+        "legacy_id": 39, 
+        "legacy_data": 0 //TODO: Map carrot with aging wheat, for now, brown mushroom is a replacement (5794 - 5801)
+      },
+      "5795": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5796": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5797": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5798": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5799": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5800": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5801": {
+        "legacy_id": 39, 
+        "legacy_data": 0
+      },
+      "5821": {
+        "legacy_id": 77, 
+        "legacy_data": 0 //TODO: Activation and Rotation (ALL TYPES OF WOODEN BUTTONS: 5810 - 5953)
+      },
+      "6110": {
+        "legacy_id": 70,
+        "legacy_data": 0
       },
       "6202": {
         "legacy_id": 80,
@@ -1697,10 +1949,22 @@
         "legacy_id": 20,
         "legacy_data": 0
       },
+      "7000": {
+        "legacy_id": 20,
+        "legacy_data": 0 
+      },
       //TODO: till 6838
       "7326": {
         "legacy_id": 89,
         "legacy_data": 0
+      },
+      "7359": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "7360": {
+        "legacy_id": 31,
+        "legacy_data": 2 //TODO: Correct legacy_data of 7359 and 7360
       },
       "7346": { //TERRACOTTA!
         "legacy_id": 3,
@@ -1709,6 +1973,22 @@
       "7348": {
         "legacy_id": 79,
         "legacy_data": 0
+      },
+      "7349": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "7350": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "7351": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "7352": {
+        "legacy_id": 31,
+        "legacy_data": 1
       },
       "7357": {
         "legacy_id": 31,
@@ -1742,9 +2022,25 @@
         "legacy_id": 43,
         "legacy_data": 0
       },
-      "7879": {
-        "legacy_id": 24,
+      "7878": {
+        "legacy_id": 44,
         "legacy_data": 0
+      },
+      "7879": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7880": {
+        "legacy_id": 44,
+        "legacy_data": 0
+      },
+      "7881": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7905": {
+        "legacy_id": 64,
+        "legacy_data": 1 //TODO: Rotations and Activation (ALL TYPES OF FENCE GATES(Excluding oak): 7882-8041)
       },
       "8042": {
         "legacy_id": 85,
@@ -2624,6 +2920,46 @@
       },
       "8960": {
         "legacy_id": 6,
+        "legacy_data": 1
+      },
+      "8961": {
+        "legacy_id": 35,
+        "legacy_data": 13 //TODO: Find a better alternitave for dried_kelp_block (probally id 2 is good?)
+      },
+      "9104": {
+        "legacy_id": 31,
+        "legacy_data": 1 //TODO: Find a better alternitave for seapickles (9104-9111)
+      },
+      "9104": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9105": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9106": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9107": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9108": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9109": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9110": {
+        "legacy_id": 31,
+        "legacy_data": 1
+      },
+      "9111": {
+        "legacy_id": 31,
         "legacy_data": 1
       },
       "9129": {
