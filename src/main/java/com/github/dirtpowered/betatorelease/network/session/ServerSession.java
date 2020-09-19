@@ -27,6 +27,7 @@ import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.KickDisco
 import com.github.dirtpowered.betatorelease.BetaToRelease;
 import com.github.dirtpowered.betatorelease.configuration.B2RConfiguration;
 import com.github.dirtpowered.betatorelease.data.ProtocolState;
+import com.github.dirtpowered.betatorelease.data.entity.EntityCache;
 import com.github.dirtpowered.betatorelease.data.player.BetaPlayer;
 import com.github.dirtpowered.betatorelease.network.client.ModernClient;
 import com.github.dirtpowered.betatorelease.network.translator.model.BetaToModern;
@@ -44,6 +45,9 @@ public class ServerSession extends SimpleChannelInboundHandler<Packet> {
     private ModernClient modernClient;
 
     @Getter
+    private EntityCache entityCache;
+
+    @Getter
     private BetaPlayer betaPlayer;
 
     @Getter
@@ -56,6 +60,7 @@ public class ServerSession extends SimpleChannelInboundHandler<Packet> {
         this.modernClient = new ModernClient(main, this);
 
         this.protocolState = ProtocolState.HANDSHAKE;
+        this.entityCache = new EntityCache();
 
         this.betaPlayer = new BetaPlayer(this);
     }
@@ -99,7 +104,7 @@ public class ServerSession extends SimpleChannelInboundHandler<Packet> {
         }
     }
 
-    public String getAddress() {
+    private String getAddress() {
         return channel.remoteAddress().toString();
     }
 
@@ -112,6 +117,8 @@ public class ServerSession extends SimpleChannelInboundHandler<Packet> {
     }
 
     public void disconnect(String message) {
+        entityCache.clear();
+
         if (message.isEmpty()) {
             channel.close();
         } else {

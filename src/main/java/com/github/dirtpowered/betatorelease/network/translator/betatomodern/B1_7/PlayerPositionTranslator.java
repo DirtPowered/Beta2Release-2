@@ -20,22 +20,25 @@
  * SOFTWARE.
  */
 
-package com.github.dirtpowered.betatorelease.data.entity;
+package com.github.dirtpowered.betatorelease.network.translator.betatomodern.B1_7;
 
-import lombok.Data;
+import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.PlayerPositionPacketData;
+import com.github.dirtpowered.betatorelease.BetaToRelease;
+import com.github.dirtpowered.betatorelease.network.client.ModernClient;
+import com.github.dirtpowered.betatorelease.network.session.ServerSession;
+import com.github.dirtpowered.betatorelease.network.translator.model.BetaToModern;
+import com.github.steveice10.mc.protocol.packet.ingame.client.player.ClientPlayerPositionPacket;
 
-import java.util.UUID;
+public class PlayerPositionTranslator implements BetaToModern<PlayerPositionPacketData> {
 
-@Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
+    @Override
+    public void translate(BetaToRelease main, PlayerPositionPacketData packet, ServerSession session, ModernClient modernClient) {
+        double x = packet.getX();
+        double y = packet.getY();
+        double z = packet.getZ();
 
-    public Entity(int entityId) {
-        this.entityId = entityId;
-    }
+        boolean onGround = packet.isOnGround();
 
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+        modernClient.sendPacket(new ClientPlayerPositionPacket(onGround, x, y, z));
     }
 }

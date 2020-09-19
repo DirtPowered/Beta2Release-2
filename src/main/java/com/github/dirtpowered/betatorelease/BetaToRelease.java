@@ -29,7 +29,7 @@ import com.github.dirtpowered.betatorelease.configuration.B2RConfiguration;
 import com.github.dirtpowered.betatorelease.data.mappings.PreFlatteningData;
 import com.github.dirtpowered.betatorelease.logger.AbstractLogger;
 import com.github.dirtpowered.betatorelease.network.codec.PipelineFactory;
-import com.github.dirtpowered.betatorelease.network.protocol.B_1_9;
+import com.github.dirtpowered.betatorelease.network.protocol.B1_7;
 import com.github.dirtpowered.betatorelease.network.session.ServerSession;
 import com.github.dirtpowered.betatorelease.network.session.SessionRegistry;
 import com.github.dirtpowered.betatorelease.network.translator.registry.BetaToModernTranslatorRegistry;
@@ -69,8 +69,8 @@ public class BetaToRelease {
         this.betaToModernTranslatorRegistry = new BetaToModernTranslatorRegistry();
         this.modernToBetaTranslatorRegistry = new ModernToBetaTranslatorRegistry();
 
-        BetaLib.inject(MinecraftVersion.B_1_9); //TODO: multi-version support
-        new B_1_9(betaToModernTranslatorRegistry, modernToBetaTranslatorRegistry);
+        BetaLib.inject(MinecraftVersion.B_1_7_3); //TODO: multi-version support
+        new B1_7(betaToModernTranslatorRegistry, modernToBetaTranslatorRegistry);
 
         PreFlatteningData.setInstance(this);
         PreFlatteningData.loadMappings();

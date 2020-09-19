@@ -20,22 +20,23 @@
  * SOFTWARE.
  */
 
-package com.github.dirtpowered.betatorelease.data.entity;
+package com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7;
 
-import lombok.Data;
+import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.SoundEffectPacketData;
+import com.github.dirtpowered.betatorelease.BetaToRelease;
+import com.github.dirtpowered.betatorelease.network.client.ModernClient;
+import com.github.dirtpowered.betatorelease.network.session.ServerSession;
+import com.github.dirtpowered.betatorelease.network.translator.model.ModernToBeta;
+import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerSpawnParticlePacket;
 
-import java.util.UUID;
+public class ServerSpawnParticleTranslator implements ModernToBeta<ServerSpawnParticlePacket> {
 
-@Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
+    @Override
+    public void translate(BetaToRelease main, ServerSpawnParticlePacket packet, ServerSession session, ModernClient modernClient) {
+        int x = (int) packet.getX();
+        int y = (int) packet.getY();
+        int z = (int) packet.getZ();
 
-    public Entity(int entityId) {
-        this.entityId = entityId;
-    }
-
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+        session.sendPacket(new SoundEffectPacketData(2000 /* smoke */, x, y, z, 0));
     }
 }

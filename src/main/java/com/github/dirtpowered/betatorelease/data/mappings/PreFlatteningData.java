@@ -49,7 +49,7 @@ public class PreFlatteningData {
     }
 
     public static void loadMappings() {
-        main.getLogger().info("loading 1.15.2 -> 1.0 mappings");
+        main.getLogger().info("loading 1.15.2 -> B1.7.3 mappings");
 
         File f;
         try {
@@ -100,7 +100,7 @@ public class PreFlatteningData {
         if (newToOldMap.containsKey(internalId)) {
             return newToOldMap.get(internalId);
         } else {
-            main.getLogger().warning("Missing 1.15.2 -> 1.0 block mapping for ID: " + internalId);
+            main.getLogger().warning("Missing 1.15.2 -> B1.7.3 block mapping for ID: " + internalId);
             return DEFAULT;
         }
     }

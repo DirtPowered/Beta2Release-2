@@ -53,8 +53,8 @@ public class BetaChunk {
     }
 
     private int getIndex(int x, int y, int z) {
-        //return x << 11 | z << 7 | y;
-        return (Math.min(16, x) * 16 + Math.min(16, z)) * 128 + Math.min(128, y);
+        return x << 11 | z << 7 | y;
+        //return (Math.min(16, x) * 16 + Math.min(16, z)) * 128 + Math.min(128, y);
     }
 
     public void setSkyLight(int x, int z, int y, int skyLight) {

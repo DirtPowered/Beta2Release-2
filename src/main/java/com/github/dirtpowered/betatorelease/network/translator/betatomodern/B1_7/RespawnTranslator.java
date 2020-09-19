@@ -20,22 +20,20 @@
  * SOFTWARE.
  */
 
-package com.github.dirtpowered.betatorelease.data.entity;
+package com.github.dirtpowered.betatorelease.network.translator.betatomodern.B1_7;
 
-import lombok.Data;
+import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.RespawnPacketData;
+import com.github.dirtpowered.betatorelease.BetaToRelease;
+import com.github.dirtpowered.betatorelease.network.client.ModernClient;
+import com.github.dirtpowered.betatorelease.network.session.ServerSession;
+import com.github.dirtpowered.betatorelease.network.translator.model.BetaToModern;
+import com.github.steveice10.mc.protocol.data.game.ClientRequest;
+import com.github.steveice10.mc.protocol.packet.ingame.client.ClientRequestPacket;
 
-import java.util.UUID;
+public class RespawnTranslator implements BetaToModern<RespawnPacketData> {
 
-@Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
-
-    public Entity(int entityId) {
-        this.entityId = entityId;
-    }
-
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+    @Override
+    public void translate(BetaToRelease main, RespawnPacketData packet, ServerSession session, ModernClient modernClient) {
+        modernClient.sendPacket(new ClientRequestPacket(ClientRequest.RESPAWN));
     }
 }

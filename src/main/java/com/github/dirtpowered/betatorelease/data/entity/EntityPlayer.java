@@ -23,19 +23,17 @@
 package com.github.dirtpowered.betatorelease.data.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.UUID;
 
 @Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
+@EqualsAndHashCode(callSuper = true)
+public class EntityPlayer extends Entity {
 
-    public Entity(int entityId) {
-        this.entityId = entityId;
-    }
+    private String username;
 
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+    public EntityPlayer(UUID uuid) {
+        super(uuid);
     }
 }

@@ -20,22 +20,22 @@
  * SOFTWARE.
  */
 
-package com.github.dirtpowered.betatorelease.data.entity;
+package com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7;
 
-import lombok.Data;
+import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.SpawnPositionPacketData;
+import com.github.dirtpowered.betatorelease.BetaToRelease;
+import com.github.dirtpowered.betatorelease.network.client.ModernClient;
+import com.github.dirtpowered.betatorelease.network.session.ServerSession;
+import com.github.dirtpowered.betatorelease.network.translator.model.ModernToBeta;
+import com.github.steveice10.mc.protocol.data.game.entity.metadata.Position;
+import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerSpawnPositionPacket;
 
-import java.util.UUID;
+public class ServerSpawnPositionTranslator implements ModernToBeta<ServerSpawnPositionPacket> {
 
-@Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
+    @Override
+    public void translate(BetaToRelease main, ServerSpawnPositionPacket packet, ServerSession session, ModernClient modernClient) {
+        Position position = packet.getPosition();
 
-    public Entity(int entityId) {
-        this.entityId = entityId;
-    }
-
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+        session.sendPacket(new SpawnPositionPacketData(position.getX(), position.getY(), position.getZ()));
     }
 }

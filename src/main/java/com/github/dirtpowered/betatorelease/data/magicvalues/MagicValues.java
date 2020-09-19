@@ -23,6 +23,8 @@
 package com.github.dirtpowered.betatorelease.data.magicvalues;
 
 import com.github.dirtpowered.betatorelease.data.magicvalues.model.DataHolder;
+import com.github.steveice10.mc.protocol.data.game.entity.EntityStatus;
+import com.github.steveice10.mc.protocol.data.game.entity.player.Animation;
 import com.github.steveice10.mc.protocol.data.game.entity.player.GameMode;
 import com.github.steveice10.mc.protocol.data.game.entity.type.EntityType;
 import com.github.steveice10.mc.protocol.data.game.setting.Difficulty;
@@ -30,16 +32,28 @@ import com.github.steveice10.mc.protocol.data.game.world.notify.ClientNotificati
 
 public class MagicValues {
 
+    private static AnimationMap animationMap;
+    private static EntityStatusMap entityStatusMap;
     private static DifficultyMap difficultyMap;
-    private static GamemodeMap gamemodeMap;
+    private static GameModeMap gamemodeMap;
     private static ClientNotificationMap clientNotificationMap;
     private static EntityTypeMap entityTypeMap;
 
     static {
+        animationMap = new AnimationMap();
+        entityStatusMap = new EntityStatusMap();
         difficultyMap = new DifficultyMap();
-        gamemodeMap = new GamemodeMap();
+        gamemodeMap = new GameModeMap();
         clientNotificationMap = new ClientNotificationMap();
         entityTypeMap = new EntityTypeMap();
+    }
+
+    public static int getAnimationId(Animation animation) {
+        return animationMap.getFromNamespace(animation);
+    }
+
+    public static int getEntityStatusId(EntityStatus entityStatus) {
+        return entityStatusMap.getFromNamespace(entityStatus);
     }
 
     public static int getDifficultyId(Difficulty difficulty) {
@@ -58,6 +72,27 @@ public class MagicValues {
         return entityTypeMap.getFromNamespace(entityType);
     }
 
+    static class AnimationMap extends DataHolder<Animation> {
+
+        AnimationMap() {
+            add(Animation.SWING_ARM, 1);
+            add(Animation.DAMAGE, 2);
+            add(Animation.LEAVE_BED, 3);
+        }
+    }
+
+
+    static class EntityStatusMap extends DataHolder<EntityStatus> {
+
+        EntityStatusMap() {
+            add(EntityStatus.LIVING_HURT, 2);
+            add(EntityStatus.LIVING_DEATH, 3);
+            add(EntityStatus.TAMEABLE_TAMING_FAILED, 6);
+            add(EntityStatus.TAMEABLE_TAMING_SUCCEEDED, 7);
+            add(EntityStatus.WOLF_SHAKE_WATER, 8);
+        }
+    }
+
     static class DifficultyMap extends DataHolder<Difficulty> {
 
         DifficultyMap() {
@@ -68,9 +103,9 @@ public class MagicValues {
         }
     }
 
-    static class GamemodeMap extends DataHolder<GameMode> {
+    static class GameModeMap extends DataHolder<GameMode> {
 
-        GamemodeMap() {
+        GameModeMap() {
             add(GameMode.SURVIVAL, 0);
             add(GameMode.CREATIVE, 1);
             add(GameMode.ADVENTURE, 0);
@@ -98,8 +133,6 @@ public class MagicValues {
             add(EntityType.CHICKEN, 93);
             add(EntityType.SQUID, 94);
             add(EntityType.WOLF, 95);
-            add(EntityType.MOOSHROOM, 96);
-            add(EntityType.SNOW_GOLEM, 97);
             add(EntityType.CREEPER, 50);
             add(EntityType.SKELETON, 51);
             add(EntityType.SPIDER, 52);
@@ -108,18 +141,11 @@ public class MagicValues {
             add(EntityType.SLIME, 55);
             add(EntityType.GHAST, 56);
             add(EntityType.ZOMBIE_PIGMAN, 57);
-            add(EntityType.ENDERMAN, 58);
-            add(EntityType.CAVE_SPIDER, 59);
-            add(EntityType.SILVERFISH, 60);
-            add(EntityType.BLAZE, 61);
-            add(EntityType.MAGMA_CUBE, 62);
-            add(EntityType.ENDER_DRAGON, 63);
 
             //entity replacements
             add(EntityType.DROWNED, 54);
             add(EntityType.STRAY, 54);
             add(EntityType.GUARDIAN, 94);
-            add(EntityType.ENDERMITE, 60);
             add(EntityType.PILLAGER, 51);
 
             //TODO: add more

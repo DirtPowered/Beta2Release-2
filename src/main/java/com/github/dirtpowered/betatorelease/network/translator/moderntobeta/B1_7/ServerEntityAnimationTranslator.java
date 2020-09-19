@@ -20,22 +20,23 @@
  * SOFTWARE.
  */
 
-package com.github.dirtpowered.betatorelease.data.entity;
+package com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7;
 
-import lombok.Data;
+import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.AnimationPacketData;
+import com.github.dirtpowered.betatorelease.BetaToRelease;
+import com.github.dirtpowered.betatorelease.data.magicvalues.MagicValues;
+import com.github.dirtpowered.betatorelease.network.client.ModernClient;
+import com.github.dirtpowered.betatorelease.network.session.ServerSession;
+import com.github.dirtpowered.betatorelease.network.translator.model.ModernToBeta;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityAnimationPacket;
 
-import java.util.UUID;
+public class ServerEntityAnimationTranslator implements ModernToBeta<ServerEntityAnimationPacket> {
 
-@Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
+    @Override
+    public void translate(BetaToRelease main, ServerEntityAnimationPacket packet, ServerSession session, ModernClient modernClient) {
+        int entityId = packet.getEntityId();
+        int status = MagicValues.getAnimationId(packet.getAnimation());
 
-    public Entity(int entityId) {
-        this.entityId = entityId;
-    }
-
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+        session.sendPacket(new AnimationPacketData(entityId, status));
     }
 }

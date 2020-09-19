@@ -24,14 +24,9 @@ package com.github.dirtpowered.betatorelease.network.client;
 
 import com.github.dirtpowered.betatorelease.BetaToRelease;
 import com.github.dirtpowered.betatorelease.configuration.B2RConfiguration;
-import com.github.dirtpowered.betatorelease.network.ping.PingMessage;
 import com.github.dirtpowered.betatorelease.network.session.ServerSession;
 import com.github.dirtpowered.betatorelease.network.translator.model.ModernToBeta;
-import com.github.dirtpowered.betatorelease.utils.interfaces.Callback;
-import com.github.steveice10.mc.protocol.MinecraftConstants;
 import com.github.steveice10.mc.protocol.MinecraftProtocol;
-import com.github.steveice10.mc.protocol.data.SubProtocol;
-import com.github.steveice10.mc.protocol.data.status.handler.ServerInfoHandler;
 import com.github.steveice10.packetlib.Client;
 import com.github.steveice10.packetlib.event.session.ConnectedEvent;
 import com.github.steveice10.packetlib.event.session.DisconnectedEvent;
@@ -39,8 +34,6 @@ import com.github.steveice10.packetlib.event.session.PacketReceivedEvent;
 import com.github.steveice10.packetlib.event.session.SessionAdapter;
 import com.github.steveice10.packetlib.packet.Packet;
 import com.github.steveice10.packetlib.tcp.TcpSessionFactory;
-
-import java.net.Proxy;
 
 public class ModernClient {
 
@@ -57,6 +50,7 @@ public class ModernClient {
         String username = serverSession.getBetaPlayer().getUsername();
 
         MinecraftProtocol protocol = new MinecraftProtocol(username);
+
         client = new Client(B2RConfiguration.remoteAddress, B2RConfiguration.remotePort, protocol, new TcpSessionFactory());
         client.getSession().addListener(new SessionAdapter() {
             @Override
@@ -107,18 +101,6 @@ public class ModernClient {
             if (B2RConfiguration.debug)
                 main.getLogger().error("[" + username + "] missing 'ModernToBeta' translator for " + packet.getClass().getSimpleName());
         }
-    }
-
-    public void getStatus(Callback<PingMessage> callback) {
-        MinecraftProtocol protocol = new MinecraftProtocol(SubProtocol.STATUS);
-        Client client = new Client(B2RConfiguration.remoteAddress, B2RConfiguration.remotePort, protocol, new TcpSessionFactory());
-
-        client.getSession().setFlag(MinecraftConstants.AUTH_PROXY_KEY, Proxy.NO_PROXY);
-        client.getSession().setFlag(MinecraftConstants.SERVER_INFO_HANDLER_KEY, (ServerInfoHandler) (session, info) -> {
-            callback.onComplete(new PingMessage(info.getDescription().getText(), info.getPlayerInfo().getOnlinePlayers(), info.getPlayerInfo().getMaxPlayers()));
-        });
-
-        client.getSession().connect();
     }
 
     public void sendPacket(Packet modernPacket) {

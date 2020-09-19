@@ -22,20 +22,43 @@
 
 package com.github.dirtpowered.betatorelease.data.entity;
 
-import lombok.Data;
+import lombok.Getter;
 
+import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
-@Data
-public abstract class Entity {
-    private int entityId;
-    private UUID uuid;
+@Getter
+public class EntityCache {
+    private Map<UUID, Entity> players = new ConcurrentHashMap<>();
+    private Map<Integer, Entity> entities = new ConcurrentHashMap<>();
 
-    public Entity(int entityId) {
-        this.entityId = entityId;
+    public void addPlayerEntity(UUID entityUID, Entity entity) {
+        players.put(entityUID, entity);
     }
 
-    public Entity(UUID uuid) {
-        this.uuid = uuid;
+    public void addEntity(int entityId, Entity entity) {
+        entities.put(entityId, entity);
+    }
+
+    public Entity getEntityById(int entityId) {
+        return entities.get(entityId);
+    }
+
+    public Entity getPlayerEntityByUUID(UUID uuid) {
+        return players.get(uuid);
+    }
+
+    public void removeEntity(int entityId) {
+        entities.remove(entityId);
+    }
+
+    public void removePlayerEntity(UUID entityUID) {
+        players.remove(entityUID);
+    }
+
+    public void clear() {
+        players.clear();
+        entities.clear();
     }
 }
