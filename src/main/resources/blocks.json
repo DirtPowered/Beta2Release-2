@@ -1053,9 +1053,197 @@
         "legacy_id": 60,
         "legacy_data": 1
       },
+      "3733": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3734": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3735": {
+        "legacy_id": 68,
+        "legacy_data": 3
+      },
       "3736": {
         "legacy_id": 68, //Message to self: NEVER use item ids as block ids again
-        "legacy_data": 3 //TODO: Rotation
+        "legacy_data": 3
+      },
+      "3737": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3738": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3739": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3740": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3741": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3742": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3743": {
+        "legacy_id": 68,
+        "legacy_data": 3
+      },
+      "3744": {
+        "legacy_id": 68, 
+        "legacy_data": 3
+      },
+      "3745": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3746": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3747": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3748": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3749": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3750": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3751": {
+        "legacy_id": 68,
+        "legacy_data": 3
+      },
+      "3752": {
+        "legacy_id": 68, 
+        "legacy_data": 3
+      },
+      "3753": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3754": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3755": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3756": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3757": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3758": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3759": {
+        "legacy_id": 68,
+        "legacy_data": 3
+      },
+      "3760": {
+        "legacy_id": 68, 
+        "legacy_data": 3
+      },
+      "3761": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3762": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3763": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3764": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3765": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3766": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3767": {
+        "legacy_id": 68,
+        "legacy_data": 3
+      },
+      "3768": {
+        "legacy_id": 68, 
+        "legacy_data": 3
+      },
+      "3769": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3770": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3771": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3772": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3773": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3774": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "3775": {
+        "legacy_id": 68,
+        "legacy_data": 3
+      },
+      "3776": {
+        "legacy_id": 68, 
+        "legacy_data": 3
+      },
+      "3777": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3778": {
+        "legacy_id": 68,
+        "legacy_data": 4
+      },
+      "3779": {
+        "legacy_id": 68,
+        "legacy_data": 5
+      },
+      "3780": {
+        "legacy_id": 68,
+        "legacy_data": 5
       },
       "3781": {
         "legacy_id": 69,
@@ -1577,9 +1765,41 @@
         "legacy_id": 40, 
         "legacy_data": 0
       },
+      "5129": {
+        "legacy_id": 90, 
+        "legacy_data": 0
+      },
+      "5130": {
+        "legacy_id": 35, 
+        "legacy_data": 5
+      },
+      "5131": {
+        "legacy_id": 35, 
+        "legacy_data": 5
+      },
       "5132": {
         "legacy_id": 35, 
         "legacy_data": 5 //TODO: Porbaly find a better block for activated end portals
+      },
+      "5133": {
+        "legacy_id": 35, 
+        "legacy_data": 5
+      },
+      "5134": {
+        "legacy_id": 35, 
+        "legacy_data": 13
+      },
+      "5135": {
+        "legacy_id": 35, 
+        "legacy_data": 13
+      },
+      "5136": {
+        "legacy_id": 35, 
+        "legacy_data": 13 
+      },
+      "5137": {
+        "legacy_id": 35, 
+        "legacy_data": 13
       },
       "5138": {
         "legacy_id": 12, 
@@ -2166,7 +2386,23 @@
         "legacy_id": 31,
         "legacy_data": 1
       },
+      "7681": {
+        "legacy_id": 24,
+        "legacy_data": 0
+      },
       "7771": {
+        "legacy_id": 44,
+        "legacy_data": 2
+      },
+      "7794": {
+        "legacy_id": 44,
+        "legacy_data": 2
+      },
+      "7795": {
+        "legacy_id": 44,
+        "legacy_data": 2
+      },
+      "7796": {
         "legacy_id": 44,
         "legacy_data": 2
       },
@@ -2174,9 +2410,53 @@
         "legacy_id": 44,
         "legacy_data": 2
       },
+      "7798": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "7799": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "7800": {
+        "legacy_id": 44,
+        "legacy_data": 3
+      },
+      "7801": {
+        "legacy_id": 44,
+        "legacy_data": 3
+      },
+      "7802": {
+        "legacy_id": 44,
+        "legacy_data": 3
+      },
+      "7803": {
+        "legacy_id": 44,
+        "legacy_data": 3
+      },
+      "7804": {
+        "legacy_id": 1,
+        "legacy_data": 0
+      },
+      "7805": {
+        "legacy_id": 1,
+        "legacy_data": 0
+      },
       "7806": {
         "legacy_id": 44,
-        "legacy_data": 0 //TODO: Type (7806 - 7809)
+        "legacy_data": 0
+      },
+      "7807": {
+        "legacy_id": 44,
+        "legacy_data": 0
+      },
+      "7808": {
+        "legacy_id": 44,
+        "legacy_data": 0
+      },
+      "7809": {
+        "legacy_id": 44,
+        "legacy_data": 0
       },
       "7810": {
         "legacy_id": 43,
@@ -2188,13 +2468,49 @@
       },
       "7812": {
         "legacy_id": 44,
-        "legacy_data": 1 //TODO: Type (7812 - 7815)
+        "legacy_data": 1
+      },
+      "7813": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7814": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7815": {
+        "legacy_id": 44,
+        "legacy_data": 1
       },
       "7816": {
         "legacy_id": 24,
         "legacy_data": 0
       },
       "7817": {
+        "legacy_id": 24,
+        "legacy_data": 0
+      },
+      "7818": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7819": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7820": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7821": {
+        "legacy_id": 44,
+        "legacy_data": 1
+      },
+      "7822": {
+        "legacy_id": 24,
+        "legacy_data": 0
+      },
+      "7823": {
         "legacy_id": 24,
         "legacy_data": 0
       },
@@ -2911,8 +3227,8 @@
         "legacy_data": 0
       },
       "8717": {
-        "legacy_id": 35,
-        "legacy_data": 14 //TODO: Decide, Red wool or Glowstone
+        "legacy_id": 89,
+        "legacy_data": 0 //TODO: Decide, Red wool or Glowstone
       },
       "8718": {
         "legacy_id": 5,
