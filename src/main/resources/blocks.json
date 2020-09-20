@@ -774,7 +774,7 @@
         "legacy_data": 1
       },
       "230": {
-        "legacy_id": 10,
+        "legacy_id": 20,
         "legacy_data": 0
       },
       "231": {
@@ -798,7 +798,7 @@
         "legacy_data": 2
       },
       "1340": {
-        "legacy_id": 3,
+        "legacy_id": 30,
         "legacy_data": 0
       },
       "1341": {
@@ -1054,16 +1054,112 @@
         "legacy_data": 1
       },
       "3736": {
-        "legacy_id": 323,
-        "legacy_data": 0 //TODO: Rotation
+        "legacy_id": 68, //Message to self: NEVER use item ids as block ids again
+        "legacy_data": 3 //TODO: Rotation
+      },
+      "3781": {
+        "legacy_id": 69,
+        "legacy_data": 13
+      },
+      "3782": {
+        "legacy_id": 69,
+        "legacy_data": 5
+      },
+      "3783": {
+        "legacy_id": 69,
+        "legacy_data": 13
+      },
+      "3784": {
+        "legacy_id": 69,
+        "legacy_data": 5
+      },
+      "3785": {
+        "legacy_id": 69,
+        "legacy_data": 14
+      },
+      "3786": {
+        "legacy_id": 69,
+        "legacy_data": 6
+      },
+      "3787": {
+        "legacy_id": 69,
+        "legacy_data": 14
+      },
+      "3788": {
+        "legacy_id": 69,
+        "legacy_data": 6
+      },
+      "3789": {
+        "legacy_id": 69,
+        "legacy_data": 12
       },
       "3790": {
         "legacy_id": 69,
-        "legacy_data": 0 //TODO: Rotation and Activation
+        "legacy_data": 4
+      },
+      "3791": {
+        "legacy_id": 69,
+        "legacy_data": 11
+      },
+      "3792": {
+        "legacy_id": 69,
+        "legacy_data": 3
+      },
+      "3793": {
+        "legacy_id": 69,
+        "legacy_data": 10
+      },
+      "3794": {
+        "legacy_id": 69,
+        "legacy_data": 2
+      },
+      "3795": {
+        "legacy_id": 69,
+        "legacy_data": 9
+      },
+      "3796": {
+        "legacy_id": 69,
+        "legacy_data": 1
+      },
+      "3797": {
+        "legacy_id": 69,
+        "legacy_data": 13
+      },
+      "3798": {
+        "legacy_id": 69,
+        "legacy_data": 5
+      },
+      "3799": {
+        "legacy_id": 69,
+        "legacy_data": 13
+      },
+      "3800": {
+        "legacy_id": 69,
+        "legacy_data": 5
+      },
+      "3801": {
+        "legacy_id": 69,
+        "legacy_data": 14
+      },
+      "3802": {
+        "legacy_id": 69,
+        "legacy_data": 6
+      },
+      "3803": {
+        "legacy_id": 69,
+        "legacy_data": 14
+      },
+      "3804": {
+        "legacy_id": 69,
+        "legacy_data": 6
+      },
+      "3805": {
+        "legacy_id": 70,
+        "legacy_data": 1
       },
       "3806": {
         "legacy_id": 70,
-        "legacy_data": 1
+        "legacy_data": 0
       },
       "3883": {
         "legacy_id": 74,
@@ -1285,6 +1381,10 @@
         "legacy_id": 87,
         "legacy_data": 0
       },
+      "3998": {
+        "legacy_id": 88,
+        "legacy_data": 0
+      },
       "3999": {
         "legacy_id": 89,
         "legacy_data": 0
@@ -1329,9 +1429,37 @@
         "legacy_id": 90,
         "legacy_data": 3
       },
+      "4017": {
+        "legacy_id": 94,
+        "legacy_data": 2 //TODO: Rotation and Activation (4017 - 4080)
+      },
+      "4018": {
+        "legacy_id": 93,
+        "legacy_data": 2 
+      },
+      "4019": {
+        "legacy_id": 94,
+        "legacy_data": 2
+      },
       "4020": {
-        "legacy_id": 356,
-        "legacy_data": 0 //TODO: Rotation and Activation (4017 - 4080)
+        "legacy_id": 93,
+        "legacy_data": 2
+      },
+      "4033": {
+        "legacy_id": 94,
+        "legacy_data": 6
+      },
+      "4034": {
+        "legacy_id": 93,
+        "legacy_data": 6
+      },
+      "4035": {
+        "legacy_id": 94,
+        "legacy_data": 6
+      },
+      "4036": {
+        "legacy_id": 93,
+        "legacy_data": 6
       },
       "4081": {
         "legacy_id": 20,
@@ -1413,6 +1541,10 @@
         "legacy_id": 35,
         "legacy_data": 5 //TODO: Find a better alternitave for melon (probally id 2 is good?)
       },
+      "4834": {
+        "legacy_id": 64,
+        "legacy_data": 4
+      },
       "4835": {
         "legacy_id": 64,
         "legacy_data": 0 //TODO: Activation and Rotation (4804 - 4835)
@@ -1448,6 +1580,14 @@
       "5132": {
         "legacy_id": 35, 
         "legacy_data": 5 //TODO: Porbaly find a better block for activated end portals
+      },
+      "5138": {
+        "legacy_id": 12, 
+        "legacy_data": 0
+      },
+      "5154": {
+        "legacy_id": 67, 
+        "legacy_data": 0 //TODO: Rotations (5154 - 5233)
       },
       "5234": {
         "legacy_id": 21, 
@@ -1958,6 +2098,34 @@
         "legacy_id": 89,
         "legacy_data": 0
       },
+      "7327": {
+        "legacy_id": 3,
+        "legacy_data": 0 //TODO: Find better alternitave to hay_bale (Perhaps id 2 is good?) (7327 - 2329)
+      },
+      "7328": {
+        "legacy_id": 3,
+        "legacy_data": 0
+      },
+      "7329": {
+        "legacy_id": 3,
+        "legacy_data": 0
+      },
+      "7353": {
+        "legacy_id": 31,
+        "legacy_data": 0
+      },
+      "7354": {
+        "legacy_id": 31,
+        "legacy_data": 0
+      },
+      "7355": {
+        "legacy_id": 31,
+        "legacy_data": 0
+      },
+      "7356": {
+        "legacy_id": 31,
+        "legacy_data": 0
+      },
       "7359": {
         "legacy_id": 31,
         "legacy_data": 1
@@ -2006,12 +2174,28 @@
         "legacy_id": 44,
         "legacy_data": 2
       },
-      "7809": {
+      "7806": {
         "legacy_id": 44,
+        "legacy_data": 0 //TODO: Type (7806 - 7809)
+      },
+      "7810": {
+        "legacy_id": 43,
         "legacy_data": 0
       },
       "7811": {
         "legacy_id": 43,
+        "legacy_data": 0
+      },
+      "7812": {
+        "legacy_id": 44,
+        "legacy_data": 1 //TODO: Type (7812 - 7815)
+      },
+      "7816": {
+        "legacy_id": 24,
+        "legacy_data": 0
+      },
+      "7817": {
+        "legacy_id": 24,
         "legacy_data": 0
       },
       "7833": {
@@ -2040,7 +2224,7 @@
       },
       "7905": {
         "legacy_id": 64,
-        "legacy_data": 1 //TODO: Rotations and Activation (ALL TYPES OF FENCE GATES(Excluding oak): 7882-8041)
+        "legacy_data": 0 //TODO: Rotations and Activation (ALL TYPES OF FENCE GATES(Excluding oak): 7882-8041)
       },
       "8042": {
         "legacy_id": 85,
@@ -2678,12 +2862,72 @@
         "legacy_id": 85,
         "legacy_data": 0
       },
+      "8528": {
+        "legacy_id": 83,
+        "legacy_data": 0 //TODO: IDs: 8528 - 8591
+      },
+      "8592": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8593": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8594": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8595": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8596": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8597": {
+        "legacy_id": 35,
+        "legacy_data": 10
+      },
+      "8598": {
+        "legacy_id": 35,
+        "legacy_data": 2
+      },
+      "8599": {
+        "legacy_id": 35,
+        "legacy_data": 2
+      },
+      "8600": {
+        "legacy_id": 35,
+        "legacy_data": 2
+      },
+      "8601": {
+        "legacy_id": 35,
+        "legacy_data": 2
+      },
       "8687": {
         "legacy_id": 13,
         "legacy_data": 0
       },
       "8717": {
-        "legacy_id": 89,
+        "legacy_id": 35,
+        "legacy_data": 14 //TODO: Decide, Red wool or Glowstone
+      },
+      "8718": {
+        "legacy_id": 5,
+        "legacy_data": 14
+      },
+      "8720": {
+        "legacy_id": 80,
+        "legacy_data": 0
+      },
+      "8721": {
+        "legacy_id": 80,
+        "legacy_data": 0
+      },
+      "8722": {
+        "legacy_id": 80,
         "legacy_data": 0
       },
       "8902": {
@@ -2968,6 +3212,74 @@
       },
       "9130": {
         "legacy_id": 0,
+        "legacy_data": 0
+      },
+      "10331": {
+        "legacy_id": 0,
+        "legacy_data": 0 //TODO: Rotations (10331 - 11098)
+      },
+      "11177": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11178": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11179": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11180": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11181": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11182": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11183": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11184": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11185": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11186": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11187": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11188": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11189": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11190": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11191": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11192": {
+        "legacy_id": 47,
         "legacy_data": 0
       }
     }
