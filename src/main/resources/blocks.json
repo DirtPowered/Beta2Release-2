@@ -2211,7 +2211,7 @@
       },
       "5769": {
         "legacy_id": 35, 
-        "legacy_data": 12 //TODO: Map every flower_pot to a brown wool and then kidnap outofmem to make him place the needed block on top of the wool (5770 - 5793)
+        "legacy_data": 12 //TODO: Message from E404NNF: Map every flower_pot to a brown wool and then kidnap outofmem to make him place the needed block on top of the wool (5770 - 5793)
       },
       "5795": {
         "legacy_id": 39, 
