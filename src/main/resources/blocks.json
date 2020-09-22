@@ -357,6 +357,26 @@
         "legacy_id": 17,
         "legacy_data": 0
       },
+      "90": {
+        "legacy_id": 17,
+        "legacy_data": 1
+      },
+      "91": {
+        "legacy_id": 17,
+        "legacy_data": 1
+      },
+      "92": {
+        "legacy_id": 17,
+        "legacy_data": 1
+      },
+      "106": {
+        "legacy_id": 17,
+        "legacy_data": 0
+      },
+      "107": {
+        "legacy_id": 17,
+        "legacy_data": 0
+      },
       "108": {
         "legacy_id": 17,
         "legacy_data": 0
@@ -426,6 +446,78 @@
         "legacy_data": 0
       },
       "125": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "126": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "127": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "128": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "129": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "130": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "131": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "132": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "133": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "134": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "135": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "136": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "137": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "138": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "139": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "140": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "141": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "142": {
+        "legacy_id": 5,
+        "legacy_data": 0
+      },
+      "143": {
         "legacy_id": 5,
         "legacy_data": 0
       },
@@ -785,6 +877,54 @@
         "legacy_id": 22,
         "legacy_data": 0
       },
+      "233": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "234": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "235": {
+        "legacy_id": 23,
+        "legacy_data": 5
+      },
+      "236": {
+        "legacy_id": 23,
+        "legacy_data": 5
+      },
+      "237": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
+      "238": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
+      "239": {
+        "legacy_id": 23,
+        "legacy_data": 4
+      },
+      "240": {
+        "legacy_id": 23,
+        "legacy_data": 4
+      },
+      "241": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "242": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "243": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
+      "244": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
       "245": {
         "legacy_id": 24,
         "legacy_data": 0
@@ -796,6 +936,54 @@
       "247": {
         "legacy_id": 24,
         "legacy_data": 2
+      },
+      "1304": {
+        "legacy_id": 27,
+        "legacy_data": 8
+      },
+      "1305": {
+        "legacy_id": 27,
+        "legacy_data": 9
+      },
+      "1306": {
+        "legacy_id": 27,
+        "legacy_data": 11
+      },
+      "1307": {
+        "legacy_id": 27,
+        "legacy_data": 10
+      },
+      "1308": {
+        "legacy_id": 27,
+        "legacy_data": 12
+      },
+      "1309": {
+        "legacy_id": 27,
+        "legacy_data": 13
+      },//off
+      "1310": {
+        "legacy_id": 27,
+        "legacy_data": 0
+      },
+      "1311": {
+        "legacy_id": 27,
+        "legacy_data": 9
+      },
+      "1312": {
+        "legacy_id": 27,
+        "legacy_data": 1
+      },
+      "1313": {
+        "legacy_id": 27,
+        "legacy_data": 3
+      },
+      "1314": {
+        "legacy_id": 68,
+        "legacy_data": 2
+      },
+      "1315": {
+        "legacy_id": 68,
+        "legacy_data": 5
       },
       "1340": {
         "legacy_id": 30,
@@ -957,6 +1145,10 @@
         "legacy_id": 42,
         "legacy_data": 0
       },
+      "1428": {
+        "legacy_id": 45,
+        "legacy_data": 0
+      },
       "1431": {
         "legacy_id": 47,
         "legacy_data": 4
@@ -984,6 +1176,14 @@
       "1438": {
         "legacy_id": 50,
         "legacy_data": 1
+      },
+      "1439": {
+        "legacy_id": 51,
+        "legacy_data": 0 //TODO: The unreasonable amount of blocksates for fire (1439 - 1950)
+      },
+      "1951": {
+        "legacy_id": 52,
+        "legacy_data":0
       },
       "3352": {
         "legacy_id": 56,
@@ -1052,6 +1252,78 @@
       "3370": {
         "legacy_id": 60,
         "legacy_data": 1
+      },
+      "3371": {
+        "legacy_id": 62,
+        "legacy_data": 2
+      },
+      "3372": {
+        "legacy_id": 61,
+        "legacy_data": 2
+      },
+      "3373": {
+        "legacy_id": 62,
+        "legacy_data": 3
+      },
+      "3374": {
+        "legacy_id": 61,
+        "legacy_data": 3
+      },
+      "3375": {
+        "legacy_id": 62,
+        "legacy_data": 4
+      },
+      "3376": {
+        "legacy_id": 61,
+        "legacy_data": 4
+      },
+      "3377": {
+        "legacy_id": 62,
+        "legacy_data": 5
+      },
+      "3378": {
+        "legacy_id": 61,
+        "legacy_data": 5
+      },
+      "3643": {
+        "legacy_id": 66,
+        "legacy_data": 0
+      },
+      "3644": {
+        "legacy_id": 66,
+        "legacy_data": 1
+      },
+      "3645": {
+        "legacy_id": 66,
+        "legacy_data": 3
+      },
+      "3646": {
+        "legacy_id": 66,
+        "legacy_data": 2
+      },
+      "3647": {
+        "legacy_id": 66,
+        "legacy_data": 5
+      },
+      "3648": {
+        "legacy_id": 66,
+        "legacy_data": 4
+      },
+      "3649": {
+        "legacy_id": 66,
+        "legacy_data": 8
+      },
+      "3650": {
+        "legacy_id": 66,
+        "legacy_data": 9
+      },
+      "3651": {
+        "legacy_id": 66,
+        "legacy_data": 6
+      },
+      "3652": {
+        "legacy_id": 66,
+        "legacy_data": 7
       },
       "3733": {
         "legacy_id": 68,
@@ -1349,6 +1621,54 @@
         "legacy_id": 70,
         "legacy_data": 0
       },
+      "3871": {
+        "legacy_id": 72,
+        "legacy_data": 1
+      },
+      "3872": {
+        "legacy_id": 72,
+        "legacy_data": 0
+      },
+      "3873": {
+        "legacy_id": 72,
+        "legacy_data": 1
+      },
+      "3874": {
+        "legacy_id": 72,
+        "legacy_data": 0
+      },
+      "3875": {
+        "legacy_id": 72,
+        "legacy_data": 1
+      },
+      "3876": {
+        "legacy_id": 72,
+        "legacy_data": 0
+      },
+      "3877": {
+        "legacy_id": 72,
+        "legacy_data": 1
+      },
+      "3878": {
+        "legacy_id": 72,
+        "legacy_data": 0
+      },
+      "3879": {
+        "legacy_id": 72,
+        "legacy_data": 1
+      },
+      "3880": {
+        "legacy_id": 72,
+        "legacy_data": 0
+      },
+      "3881": {
+        "legacy_id": 72,
+        "legacy_data": 1
+      },
+      "3882": {
+        "legacy_id": 72,
+        "legacy_data": 0
+      },
       "3883": {
         "legacy_id": 74,
         "legacy_data": 0
@@ -1367,7 +1687,7 @@
       },
       "3929": {
         "legacy_id": 81,
-        "legacy_data": 0 //TODO: Ageing? I guess? I dont think its in beta (3929 - 3944)
+        "legacy_data": 0
       },
       "3930": {
         "legacy_id": 81,
@@ -1721,8 +2041,40 @@
         "legacy_id": 4,
         "legacy_data": 0
       },
+      "4482": {
+        "legacy_id": 48,
+        "legacy_data": 0
+      },
+      "4483": {
+        "legacy_id": 4,
+        "legacy_data": 0
+      },
+      "4484": {
+        "legacy_id": 4,
+        "legacy_data": 0
+      },
       "4485": {
         "legacy_id": 1,
+        "legacy_data": 0
+      },
+      "4486": {
+        "legacy_id": 4,
+        "legacy_data": 0
+      },
+      "4487": {
+        "legacy_id": 4,
+        "legacy_data": 0
+      },
+      "4488": {
+        "legacy_id": 48,
+        "legacy_data": 0
+      },
+      "4489": {
+        "legacy_id": 4,
+        "legacy_data": 0
+      },
+      "4490": {
+        "legacy_id": 4,
         "legacy_data": 0
       },
       "4747": {
@@ -1749,9 +2101,25 @@
         "legacy_id": 35,
         "legacy_data": 13
       },
+      "4999": {
+        "legacy_id": 45,
+        "legacy_data": 0
+      },
       "5112": {
-        "legacy_id": 40, 
-        "legacy_data": 0 //TODO: Map nether_wart with aging wheat, for now, red mushroom is a replacement (5112 - 5115)
+        "legacy_id": 50, 
+        "legacy_data": 0
+      },
+      "5113": {
+        "legacy_id": 50, 
+        "legacy_data": 2
+      },
+      "5114": {
+        "legacy_id": 50, 
+        "legacy_data": 4
+      },
+      "5115": {
+        "legacy_id": 50, 
+        "legacy_data": 7
       },
       "5113": {
         "legacy_id": 40, 
@@ -1805,6 +2173,18 @@
         "legacy_id": 12, 
         "legacy_data": 0
       },
+      "5139": {
+        "legacy_id": 35, 
+        "legacy_data": 15
+      },
+      "5140": {
+        "legacy_id": 73, 
+        "legacy_data": 0
+      },
+      "5141": {
+        "legacy_id": 89, 
+        "legacy_data": 0
+      },
       "5154": {
         "legacy_id": 67, 
         "legacy_data": 0 //TODO: Rotations (5154 - 5233)
@@ -1828,6 +2208,10 @@
       "5794": {
         "legacy_id": 39, 
         "legacy_data": 0 //TODO: Map carrot with aging wheat, for now, brown mushroom is a replacement (5794 - 5801)
+      },
+      "5769": {
+        "legacy_id": 35, 
+        "legacy_data": 12 //TODO: Map every flower_pot to a brown wool and then kidnap outofmem to make him place the needed block on top of the wool (5770 - 5793)
       },
       "5795": {
         "legacy_id": 39, 
@@ -1868,6 +2252,54 @@
       "6202": {
         "legacy_id": 80,
         "legacy_data": 0
+      },
+      "6299": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "6300": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "6301": {
+        "legacy_id": 23,
+        "legacy_data": 5
+      },
+      "6302": {
+        "legacy_id": 23,
+        "legacy_data": 5
+      },
+      "6303": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
+      "6304": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
+      "6305": {
+        "legacy_id": 23,
+        "legacy_data": 4
+      },
+      "6306": {
+        "legacy_id": 23,
+        "legacy_data": 4
+      },
+      "6307": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "6308": {
+        "legacy_id": 23,
+        "legacy_data": 2
+      },
+      "6309": {
+        "legacy_id": 23,
+        "legacy_data": 3
+      },
+      "6310": {
+        "legacy_id": 23,
+        "legacy_data": 3
       },
       "6311": {
         "legacy_id": 35,
@@ -2309,9 +2741,25 @@
         "legacy_id": 20,
         "legacy_data": 0
       },
+      "6999": {
+        "legacy_id": 35,
+        "legacy_data": 5
+      },
       "7000": {
         "legacy_id": 20,
         "legacy_data": 0 
+      },
+      "7065": {
+        "legacy_id": 35,
+        "legacy_data": 5 
+      },
+      "7066": {
+        "legacy_id": 35,
+        "legacy_data": 5 
+      },
+      "7067": {
+        "legacy_id": 35,
+        "legacy_data": 13 
       },
       //TODO: till 6838
       "7326": {
@@ -2358,6 +2806,10 @@
         "legacy_id": 3,
         "legacy_data": 0
       },
+      "7347": {
+        "legacy_id": 49,
+        "legacy_data": 0
+      },
       "7348": {
         "legacy_id": 79,
         "legacy_data": 0
@@ -2387,6 +2839,14 @@
         "legacy_data": 1
       },
       "7681": {
+        "legacy_id": 24,
+        "legacy_data": 0
+      },
+      "7682": {
+        "legacy_id": 24,
+        "legacy_data": 0
+      },
+      "7683": {
         "legacy_id": 24,
         "legacy_data": 0
       },
@@ -3222,6 +3682,10 @@
         "legacy_id": 35,
         "legacy_data": 2
       },
+      "8682": {
+        "legacy_id": 12,
+        "legacy_data": 0
+      },
       "8687": {
         "legacy_id": 13,
         "legacy_data": 0
@@ -3231,8 +3695,12 @@
         "legacy_data": 0 //TODO: Decide, Red wool or Glowstone
       },
       "8718": {
-        "legacy_id": 5,
+        "legacy_id": 35,
         "legacy_data": 14
+      },
+      "8719": {
+        "legacy_id": 87,
+        "legacy_data": 0
       },
       "8720": {
         "legacy_id": 80,
@@ -3522,6 +3990,18 @@
         "legacy_id": 31,
         "legacy_data": 1
       },
+      "9112": {
+        "legacy_id": 79,
+        "legacy_data": 0
+      },
+      "9113": {
+        "legacy_id": 75,
+        "legacy_data": 5
+      },
+      "9114": {
+        "legacy_id": 75,
+        "legacy_data": 5
+      },
       "9129": {
         "legacy_id": 0,
         "legacy_data": 0
@@ -3533,6 +4013,30 @@
       "10331": {
         "legacy_id": 0,
         "legacy_data": 0 //TODO: Rotations (10331 - 11098)
+      },
+      "11131": {
+        "legacy_id": 58,
+        "legacy_data": 0
+      },
+      "11132": {
+        "legacy_id": 58,
+        "legacy_data": 0
+      },
+      "11133": {
+        "legacy_id": 58,
+        "legacy_data": 0
+      },
+      "11134": {
+        "legacy_id": 58,
+        "legacy_data": 0
+      },
+      "11163": {
+        "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11164": {
+        "legacy_id": 47,
+        "legacy_data": 0
       },
       "11177": {
         "legacy_id": 47,
@@ -3596,6 +4100,14 @@
       },
       "11192": {
         "legacy_id": 47,
+        "legacy_data": 0
+      },
+      "11230": {
+        "legacy_id": 89,
+        "legacy_data": 0
+      },
+      "11231": {
+        "legacy_id": 89,
         "legacy_data": 0
       }
     }
