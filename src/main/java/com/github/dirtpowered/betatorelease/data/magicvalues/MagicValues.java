@@ -31,13 +31,12 @@ import com.github.steveice10.mc.protocol.data.game.setting.Difficulty;
 import com.github.steveice10.mc.protocol.data.game.world.notify.ClientNotification;
 
 public class MagicValues {
-
-    private static AnimationMap animationMap;
-    private static EntityStatusMap entityStatusMap;
-    private static DifficultyMap difficultyMap;
-    private static GameModeMap gamemodeMap;
-    private static ClientNotificationMap clientNotificationMap;
-    private static EntityTypeMap entityTypeMap;
+    private static final AnimationMap animationMap;
+    private static final EntityStatusMap entityStatusMap;
+    private static final DifficultyMap difficultyMap;
+    private static final GameModeMap gamemodeMap;
+    private static final ClientNotificationMap clientNotificationMap;
+    private static final EntityTypeMap entityTypeMap;
 
     static {
         animationMap = new AnimationMap();

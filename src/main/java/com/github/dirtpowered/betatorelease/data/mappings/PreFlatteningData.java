@@ -42,7 +42,7 @@ import java.util.Map;
 public class PreFlatteningData {
     private final static OldBlock DEFAULT = new OldBlock(1, 0);
     private static BetaToRelease main;
-    private static Map<Integer, OldBlock> newToOldMap = new HashMap<>();
+    private static final Map<Integer, OldBlock> newToOldMap = new HashMap<>();
 
     public static void setInstance(BetaToRelease betaToRelease) {
         main = betaToRelease;

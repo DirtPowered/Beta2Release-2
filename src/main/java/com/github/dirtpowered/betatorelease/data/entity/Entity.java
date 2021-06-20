@@ -30,6 +30,9 @@ import java.util.UUID;
 public abstract class Entity {
     private int entityId;
     private UUID uuid;
+    private double x;
+    private double y;
+    private double z;
 
     public Entity(int entityId) {
         this.entityId = entityId;

@@ -39,16 +39,15 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class ServerSession extends SimpleChannelInboundHandler<Packet> {
-
-    private BetaToRelease main;
-    private SocketChannel channel;
-    private ModernClient modernClient;
-
-    @Getter
-    private EntityCache entityCache;
+    private final BetaToRelease main;
+    private final SocketChannel channel;
+    private final ModernClient modernClient;
 
     @Getter
-    private BetaPlayer betaPlayer;
+    private final EntityCache entityCache;
+
+    @Getter
+    private final BetaPlayer betaPlayer;
 
     @Getter
     @Setter
@@ -92,9 +91,8 @@ public class ServerSession extends SimpleChannelInboundHandler<Packet> {
         cause.printStackTrace();
     }
 
-    @SuppressWarnings("unchecked")
-    private void processPacket(Packet packet) {
-        BetaToModern handler = main.getBetaToModernTranslatorRegistry().getByPacket(packet);
+    private void processPacket(Packet<?> packet) {
+        BetaToModern<Packet<?>> handler = main.getBetaToModernTranslatorRegistry().getByPacket(packet);
 
         if (handler != null) {
             handler.translate(main, packet, this, modernClient);
@@ -108,7 +106,7 @@ public class ServerSession extends SimpleChannelInboundHandler<Packet> {
         return channel.remoteAddress().toString();
     }
 
-    public void sendPacket(Packet packet) {
+    public void sendPacket(Packet<?> packet) {
         channel.writeAndFlush(packet);
     }
 

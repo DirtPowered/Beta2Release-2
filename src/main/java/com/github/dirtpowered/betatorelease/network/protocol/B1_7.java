@@ -52,6 +52,7 @@ import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerDifficultyTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerEntityAnimationTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerEntityDestroyTranslator;
+import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerEntityMetadataTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerEntityPositionRotationTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerEntityPositionTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerEntityStatusTranslator;
@@ -64,6 +65,7 @@ import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerPlayerPositionRotationTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerRespawnTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerSetSlotTranslator;
+import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerSpawnEntityTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerSpawnLivingEntityTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerSpawnParticleTranslator;
 import com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_7.ServerSpawnPlayerTranslator;
@@ -79,6 +81,7 @@ import com.github.steveice10.mc.protocol.packet.ingame.server.ServerPlayerListEn
 import com.github.steveice10.mc.protocol.packet.ingame.server.ServerRespawnPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityAnimationPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityDestroyPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityMetadataPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityPositionPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityPositionRotationPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityStatusPacket;
@@ -86,6 +89,7 @@ import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntit
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.ServerEntityVelocityPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.player.ServerPlayerHealthPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.player.ServerPlayerPositionRotationPacket;
+import com.github.steveice10.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnEntityPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnLivingEntityPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.entity.spawn.ServerSpawnPlayerPacket;
 import com.github.steveice10.mc.protocol.packet.ingame.server.window.ServerSetSlotPacket;
@@ -137,5 +141,7 @@ public class B1_7 {
         modernToBetaTranslatorRegistry.registerTranslator(ServerSetSlotPacket.class, new ServerSetSlotTranslator());
         modernToBetaTranslatorRegistry.registerTranslator(ServerPlayerListEntryPacket.class, new ServerPlayerListEntryTranslator());
         modernToBetaTranslatorRegistry.registerTranslator(ServerSpawnParticlePacket.class, new ServerSpawnParticleTranslator());
+        modernToBetaTranslatorRegistry.registerTranslator(ServerEntityMetadataPacket.class, new ServerEntityMetadataTranslator());
+        modernToBetaTranslatorRegistry.registerTranslator(ServerSpawnEntityPacket.class, new ServerSpawnEntityTranslator());
     }
 }

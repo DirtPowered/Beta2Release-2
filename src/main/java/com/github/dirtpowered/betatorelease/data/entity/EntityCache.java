@@ -30,8 +30,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Getter
 public class EntityCache {
-    private Map<UUID, Entity> players = new ConcurrentHashMap<>();
-    private Map<Integer, Entity> entities = new ConcurrentHashMap<>();
+    private final Map<UUID, Entity> players = new ConcurrentHashMap<>();
+    private final Map<Integer, Entity> entities = new ConcurrentHashMap<>();
 
     public void addPlayerEntity(UUID entityUID, Entity entity) {
         players.put(entityUID, entity);

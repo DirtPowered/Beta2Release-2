@@ -34,7 +34,6 @@ public class ChatTranslator implements BetaToModern<ChatPacketData> {
     @Override
     public void translate(BetaToRelease main, ChatPacketData packet, ServerSession session, ModernClient modernClient) {
         String message = packet.getMessage();
-
         modernClient.sendPacket(new ClientChatPacket(message));
     }
 }

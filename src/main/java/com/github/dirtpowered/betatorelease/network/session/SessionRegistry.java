@@ -27,7 +27,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class SessionRegistry {
-    private Set<ServerSession> sessions = ConcurrentHashMap.newKeySet();
+    private final Set<ServerSession> sessions = ConcurrentHashMap.newKeySet();
 
     void addSession(ServerSession session) {
         sessions.add(session);

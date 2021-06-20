@@ -45,19 +45,19 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.Getter;
 
 public class BetaToRelease {
-    private AbstractBootstrap bootstrap;
-    private EventLoopGroup bossGroup = new NioEventLoopGroup();
-    private EventLoopGroup workerGroup = new NioEventLoopGroup();
-    private BetaToRelease instance;
+    private final AbstractBootstrap bootstrap;
+    private final EventLoopGroup bossGroup = new NioEventLoopGroup();
+    private final EventLoopGroup workerGroup = new NioEventLoopGroup();
+    private final BetaToRelease instance;
 
     @Getter
-    private BetaToModernTranslatorRegistry betaToModernTranslatorRegistry;
+    private final BetaToModernTranslatorRegistry betaToModernTranslatorRegistry;
 
     @Getter
-    private ModernToBetaTranslatorRegistry modernToBetaTranslatorRegistry;
+    private final ModernToBetaTranslatorRegistry modernToBetaTranslatorRegistry;
 
     @Getter
-    private SessionRegistry sessionRegistry;
+    private final SessionRegistry sessionRegistry;
 
     public BetaToRelease(AbstractBootstrap bootstrap) {
         long startTime = System.nanoTime();
@@ -85,7 +85,7 @@ public class BetaToRelease {
         return bootstrap.getAppLogger();
     }
 
-    private void bind(String addr, int port) {
+    private void bind(String address, int port) {
         ServerBootstrap b = new ServerBootstrap();
         b.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class)
@@ -100,7 +100,7 @@ public class BetaToRelease {
 
         ChannelFuture future;
         try {
-            future = b.bind(addr, port).sync();
+            future = b.bind(address, port).sync();
             future.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             getLogger().error("address already in use: " + e.getLocalizedMessage());

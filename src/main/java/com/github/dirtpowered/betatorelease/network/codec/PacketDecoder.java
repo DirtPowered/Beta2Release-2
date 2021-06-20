@@ -36,7 +36,7 @@ import java.util.List;
 
 public class PacketDecoder extends ReplayingDecoder<Packet> {
 
-    private BetaToRelease main;
+    private final BetaToRelease main;
 
     PacketDecoder(BetaToRelease main) {
         this.main = main;

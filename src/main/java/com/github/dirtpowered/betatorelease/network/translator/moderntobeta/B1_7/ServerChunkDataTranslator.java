@@ -33,33 +33,37 @@ import com.github.dirtpowered.betatorelease.network.session.ServerSession;
 import com.github.dirtpowered.betatorelease.network.translator.model.ModernToBeta;
 import com.github.steveice10.mc.protocol.data.game.chunk.Chunk;
 import com.github.steveice10.mc.protocol.data.game.chunk.Column;
+import com.github.steveice10.mc.protocol.data.game.world.block.BlockState;
 import com.github.steveice10.mc.protocol.packet.ingame.server.world.ServerChunkDataPacket;
+import org.pmw.tinylog.Logger;
 
 public class ServerChunkDataTranslator implements ModernToBeta<ServerChunkDataPacket> {
 
     @Override
     public void translate(BetaToRelease main, ServerChunkDataPacket packet, ServerSession session, ModernClient modernClient) {
         Column chunkColumn = packet.getColumn();
+        int xPosition = chunkColumn.getX();
+        int zPosition = chunkColumn.getZ();
 
-        int chunkX = chunkColumn.getX();
-        int chunkZ = chunkColumn.getZ();
+        BetaChunk betaChunk = new BetaChunk(xPosition, zPosition);
 
-        session.sendPacket(new PreChunkPacketData(chunkX, chunkZ, true));
+        session.sendPacket(new PreChunkPacketData(xPosition, zPosition, true /* allocate space */));
+        //https://wiki.vg/index.php?title=Protocol&oldid=689#Pre-Chunk_.280x32.29
 
         Chunk[] chunks = packet.getColumn().getChunks();
 
-        BetaChunk betaChunk = new BetaChunk(chunkX, chunkZ);
-
         try {
-            for (int i = 0; i < chunks.length; i++) {
-                Chunk chunk = chunks[i];
-                if (chunk == null || chunkColumn.getBiomeData().length == 0 /* skip non-full chunks for now */)
-                    return;
+            int index = 0;
+            while (index < chunks.length) {
+                Chunk chunk = chunks[index];
 
-                int xPos = chunkX * 16;
-                int zPos = chunkZ * 16;
+                if (chunk == null) {
+                    index++;
+                    continue;
+                }
 
-                final int columnCurrentHeight = i * 16;
+                final int columnCurrentHeight = index * 16; //(0-127)
+
                 for (int x = 0; x < 16; x++) {
                     for (int y = 0; y < 16; y++) {
                         for (int z = 0; z < 16; z++) {
@@ -68,14 +72,25 @@ public class ServerChunkDataTranslator implements ModernToBeta<ServerChunkDataPa
 
                             betaChunk.setBlock(x, y + columnCurrentHeight, z, oldBlock.getBlockId());
                             betaChunk.setMetaData(x, y + columnCurrentHeight, z, oldBlock.getBlockData());
+                            betaChunk.setSkyLight(x, y, z, 15);
+                            betaChunk.setBlockLight(x, y, z, 15);
                         }
                     }
                 }
-
-                session.sendPacket(new MapChunkPacketData(xPos, 0, zPos, 16, 128, 16, betaChunk.serializeTileData()));
+                index++;
             }
-        } catch (Exception e) {
-            main.getLogger().error("unable to convert chunk at x: " + chunkX + ", z: " + chunkZ);
+
+            session.sendPacket(new MapChunkPacketData(
+                    betaChunk.getX() * 16,
+                    (short) 0,
+                    betaChunk.getZ() * 16,
+                    16,
+                    128,
+                    16,
+                    betaChunk.serializeTileData()
+            ));
+        } catch (ArrayIndexOutOfBoundsException e) {
+            Logger.error("Chunk error: {}", e);
         }
     }
 }

@@ -37,8 +37,8 @@ import com.github.steveice10.packetlib.tcp.TcpSessionFactory;
 
 public class ModernClient {
 
-    private ServerSession serverSession;
-    private BetaToRelease main;
+    private final ServerSession serverSession;
+    private final BetaToRelease main;
     private Client client;
 
     public ModernClient(BetaToRelease main, ServerSession serverSession) {
@@ -87,9 +87,8 @@ public class ModernClient {
         }
     }
 
-    @SuppressWarnings("unchecked")
     private void processPacket(Packet packet) {
-        ModernToBeta handler = main.getModernToBetaTranslatorRegistry().getByPacket(packet);
+        ModernToBeta<Packet> handler = main.getModernToBetaTranslatorRegistry().getByPacket(packet);
         String username = serverSession.getBetaPlayer().getUsername();
 
         if (handler != null) {

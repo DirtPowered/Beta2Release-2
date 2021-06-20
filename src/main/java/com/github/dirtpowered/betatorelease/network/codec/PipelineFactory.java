@@ -29,7 +29,7 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
 
 public class PipelineFactory extends ChannelInitializer {
 
-    private BetaToRelease main;
+    private final BetaToRelease main;
 
     public PipelineFactory(BetaToRelease main) {
         this.main = main;

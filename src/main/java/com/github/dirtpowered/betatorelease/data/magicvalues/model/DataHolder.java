@@ -26,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class DataHolder<T> {
-    private Map<T, Integer> registry = new HashMap<>();
+    private final Map<T, Integer> registry = new HashMap<>();
 
     protected void add(T from, int to) {
         registry.put(from, to);

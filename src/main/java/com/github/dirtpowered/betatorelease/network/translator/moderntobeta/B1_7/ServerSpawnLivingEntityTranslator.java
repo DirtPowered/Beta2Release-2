@@ -24,6 +24,8 @@ package com.github.dirtpowered.betatorelease.network.translator.moderntobeta.B1_
 
 import com.github.dirtpowered.betaprotocollib.packet.Version_B1_7.data.MobSpawnPacketData;
 import com.github.dirtpowered.betatorelease.BetaToRelease;
+import com.github.dirtpowered.betatorelease.data.entity.Entity;
+import com.github.dirtpowered.betatorelease.data.entity.EntityArmorStand;
 import com.github.dirtpowered.betatorelease.data.magicvalues.MagicValues;
 import com.github.dirtpowered.betatorelease.network.client.ModernClient;
 import com.github.dirtpowered.betatorelease.network.session.ServerSession;
@@ -36,6 +38,13 @@ public class ServerSpawnLivingEntityTranslator implements ModernToBeta<ServerSpa
     @Override
     public void translate(BetaToRelease main, ServerSpawnLivingEntityPacket packet, ServerSession session, ModernClient modernClient) {
         int entityId = packet.getEntityId();
+        Entity e = new EntityArmorStand(packet.getEntityId());
+        e.setX(packet.getX());
+        e.setY(packet.getY());
+        e.setZ(packet.getZ());
+
+        session.getEntityCache().addEntity(packet.getEntityId(), e);
+
         byte entityTypeId = (byte) MagicValues.getEntityTypeId(packet.getType());
         if (entityTypeId == -1) return;
 
@@ -44,6 +53,7 @@ public class ServerSpawnLivingEntityTranslator implements ModernToBeta<ServerSpa
         int z = Utils.toAbsolutePos(packet.getZ());
         byte yaw = (byte) Utils.toAbsoluteRotation((int) packet.getYaw());
         byte pitch = (byte) Utils.toAbsoluteRotation((int) packet.getPitch());
+
 
         session.sendPacket(new MobSpawnPacketData(entityId, entityTypeId, x, y, z, yaw, pitch, null));
     }
