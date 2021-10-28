@@ -1179,7 +1179,51 @@
       },
       "1439": {
         "legacy_id": 51,
-        "legacy_data": 0 //TODO: The unreasonable amount of blocksates for fire (1439 - 1950)
+        "legacy_data": 0
+      },
+      "1440": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1441": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1442": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1443": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1444": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1445": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1446": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1447": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1448": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1449": {
+        "legacy_id": 51,
+        "legacy_data": 0
+      },
+      "1450": {
+        "legacy_id": 51,
+        "legacy_data": 0
       },
       "1951": {
         "legacy_id": 52,
@@ -1379,6 +1423,167 @@
       },
       "3378": {
         "legacy_id": 61,
+        "legacy_data": 5
+      },
+      "3379": {
+        "legacy_id": 63,
+        "legacy_data": 0
+      },
+      "3380": {
+        "legacy_id": 63,
+        "legacy_data": 0
+      },
+      "3381": {
+        "legacy_id": 63,
+        "legacy_data": 1
+      },
+      "3382": {
+        "legacy_id": 63,
+        "legacy_data": 1
+      },
+      "3383": {
+        "legacy_id": 63,
+        "legacy_data": 2
+      },
+      "3384": {
+        "legacy_id": 63,
+        "legacy_data": 2
+      },
+      "3385": {
+        "legacy_id": 63,
+        "legacy_data": 3
+      },
+      "3386": {
+        "legacy_id": 63,
+        "legacy_data": 3
+      },
+      "3387": {
+        "legacy_id": 63,
+        "legacy_data": 4
+      },
+      "3388": {
+        "legacy_id": 63,
+        "legacy_data": 4
+      },
+      "3389": {
+        "legacy_id": 63,
+        "legacy_data": 5
+      },
+      "3390": {
+        "legacy_id": 63,
+        "legacy_data": 5
+      },
+      "3391": {
+        "legacy_id": 63,
+        "legacy_data": 6
+      },
+      "3392": {
+        "legacy_id": 63,
+        "legacy_data": 6
+      },
+      "3393": {
+        "legacy_id": 63,
+        "legacy_data": 7
+      },
+      "3394": {
+        "legacy_id": 63,
+        "legacy_data": 7
+      },
+      "3395": {
+        "legacy_id": 63,
+        "legacy_data": 8
+      },
+      "3396": {
+        "legacy_id": 63,
+        "legacy_data": 8
+      },
+      "3397": {
+        "legacy_id": 63,
+        "legacy_data": 9
+      },
+      "3398": {
+        "legacy_id": 63,
+        "legacy_data": 9
+      },
+      "3399": {
+        "legacy_id": 63,
+        "legacy_data": 10
+      },
+      "3400": {
+        "legacy_id": 63,
+        "legacy_data": 10
+      },
+      "3401": {
+        "legacy_id": 63,
+        "legacy_data": 11
+      },
+      "3402": {
+        "legacy_id": 63,
+        "legacy_data": 11
+      },
+      "3403": {
+        "legacy_id": 63,
+        "legacy_data": 12
+      },
+      "3404": {
+        "legacy_id": 63,
+        "legacy_data": 12
+      },
+      "3405": {
+        "legacy_id": 63,
+        "legacy_data": 13
+      },
+      "3406": {
+        "legacy_id": 63,
+        "legacy_data": 13
+      },
+      "3407": {
+        "legacy_id": 63,
+        "legacy_data": 14
+      },
+      "3408": {
+        "legacy_id": 63,
+        "legacy_data": 14
+      },
+      "3409": {
+        "legacy_id": 63,
+        "legacy_data": 15
+      },
+      "3410": {
+        "legacy_id": 63,//TODO : PINTU
+        "legacy_data": 15
+      },
+      
+      "3635": {
+        "legacy_id": 65,
+        "legacy_data": 2
+      },
+      "3636": {
+        "legacy_id": 65,
+        "legacy_data": 2
+      },
+      "3637": {
+        "legacy_id": 65,
+        "legacy_data": 3
+      },
+      "3638": {
+        "legacy_id": 65,
+        "legacy_data": 3
+      },
+      "3639": {
+        "legacy_id": 65,
+        "legacy_data": 4
+      },
+      "3640": {
+        "legacy_id": 65,
+        "legacy_data": 4
+      },
+      "3641": {
+        "legacy_id": 65,
+        "legacy_data": 5
+      },
+      "3642": {
+        "legacy_id": 65,
         "legacy_data": 5
       },
       "3643": {

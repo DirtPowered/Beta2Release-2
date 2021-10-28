@@ -24,8 +24,8 @@ package com.github.dirtpowered.betatorelease.configuration;
 
 public class B2RConfiguration {
     public static String remoteAddress = "localhost";
-    public static int remotePort = 25567;
+    public static int remotePort = 25566;
     public static String bindAddress = "localhost";
-    public static int bindPort = 25565;
+    public static int bindPort = 25564;
     public static boolean debug = false;
 }
