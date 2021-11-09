@@ -86,10 +86,9 @@
             <version>1.15.2-1</version>
         </dependency>
         <dependency>
-            <groupId>BetaProtocollib</groupId>
+            <groupId>com.github.DirtPowered</groupId>
             <artifactId>BetaProtocollib</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <version>690ba3792f</version>
         </dependency>
         <dependency>
             <groupId>org.tinylog</groupId>
